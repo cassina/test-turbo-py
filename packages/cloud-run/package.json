@@ -1,0 +1,22 @@
+{
+  "name": "@repo/cloud-run",
+  "type": "module",
+  "main": "functions/lib/index.js",
+  "exports": {
+    "./functions": "./functions/lib/index.js"
+  },
+  "scripts": {
+    "dev": "firebase emulators:start --only functions",
+    "build": "tsc --build",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^14.9.0",
+    "typescript": "5.8.2",
+    "tslib": "^2.8.1"
+  }
+}
