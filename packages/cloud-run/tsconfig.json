@@ -1,0 +1,13 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "functions/lib",
+    "rootDir": "functions/src",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es2020",
+    "strict": true
+  },
+  "include": ["functions/src"],
+  "exclude": ["node_modules", "functions/lib"]
+}
